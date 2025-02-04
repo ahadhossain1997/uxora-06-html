@@ -52,6 +52,13 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     $(".uxora-sidemenu-close, .offcanvas-overlay").on("click", function () {
       $(".uxora-sidemenu-column, .offcanvas-overlay").removeClass("active");
     });
+    $(window).on('scroll', function () {
+      if ($(window).scrollTop() > 50) {
+        $('#sticky-menu').addClass('sticky-menu');
+      } else {
+        $('#sticky-menu').removeClass('sticky-menu');
+      }
+    });
 
     /*--------------------------------------------------------------
     UXORA PROGRES CIRCLE JS INIT
