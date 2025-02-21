@@ -326,6 +326,12 @@ h2,
 @media (max-width: 1199px) {
   h2,
   .h2 {
+    font-size: 55px;
+  }
+}
+@media (max-width: 991px) {
+  h2,
+  .h2 {
     font-size: 48px;
   }
 }
@@ -2425,11 +2431,6 @@ a.light-color {
 }
 @media (max-width: 1199px) {
   .uxora-footer-menu.menu3 {
-    padding-left: 80px;
-  }
-}
-@media (max-width: 767px) {
-  .uxora-footer-menu.menu3 {
     padding-left: 0;
   }
 }
@@ -2508,11 +2509,6 @@ a.light-color {
 @media (max-width: 1399px) {
   .pl-60 {
     padding-left: 0;
-  }
-}
-@media (max-width: 1199px) {
-  .pl-60 {
-    padding-left: 80px;
   }
 }
 @media (max-width: 767px) {
@@ -3903,6 +3899,7 @@ blockquote h6 {
 @media (max-width: 991px) {
   .uxora-content-thumb {
     padding-bottom: 40px;
+    text-align: center;
   }
 }
 @media (max-width: 767px) {
@@ -3921,7 +3918,7 @@ blockquote h6 {
 }
 @media (max-width: 991px) {
   .uxora-content-thumb.thumb2 {
-    text-align: left;
+    text-align: center;
   }
 }
 .uxora-content-thumb.thumb3 {
@@ -3929,7 +3926,7 @@ blockquote h6 {
 }
 @media (max-width: 991px) {
   .uxora-content-thumb.thumb3 {
-    text-align: left;
+    text-align: center;
   }
 }
 .uxora-content-thumb.thumb4 {
@@ -3937,7 +3934,7 @@ blockquote h6 {
 }
 @media (max-width: 991px) {
   .uxora-content-thumb.thumb4 {
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -4008,6 +4005,7 @@ blockquote h6 {
     padding-top: 40px;
     margin-top: 0;
     width: 80%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 767px) {
@@ -4296,6 +4294,11 @@ textarea::placeholder {
   margin: 0 auto;
   text-align: center;
 }
+@media (max-width: 1199px) {
+  .uxora-cta-content {
+    max-width: 620px;
+  }
+}
 .uxora-cta-content h2 {
   color: var(--heading-color);
   padding-bottom: 20px;
@@ -4309,12 +4312,8 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   gap: 24px;
+  flex-wrap: wrap;
   justify-content: center;
-}
-@media (max-width: 767px) {
-  .uxora-cta-data ul {
-    display: block;
-  }
 }
 .uxora-cta-data ul li {
   display: flex;
@@ -4324,14 +4323,6 @@ textarea::placeholder {
   line-height: 24px;
   font-weight: 600;
   color: var(--heading-color);
-}
-@media (max-width: 767px) {
-  .uxora-cta-data ul li {
-    margin-bottom: 15px;
-  }
-  .uxora-cta-data ul li:last-child {
-    margin-bottom: 0;
-  }
 }
 .uxora-cta-btn {
   display: flex;
@@ -4455,6 +4446,11 @@ textarea::placeholder {
 }
 .uxora-section-title.center.max-width-750 {
   max-width: 750px;
+}
+@media (max-width: 1199px) {
+  .uxora-section-title.center.max-width-750 {
+    max-width: 600px;
+  }
 }
 .uxora-section-title.center.max-width-800 {
   max-width: 800px;
@@ -4747,7 +4743,7 @@ textarea::placeholder {
   line-height: 30px;
   font-weight: 700;
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 3px;
 }
 .breadcrumb-menu ul li a {
   color: var(--heading-color);
